@@ -21,7 +21,10 @@ li {
 	display: inline;
 }
 
-
+h5 {
+	font-size:25px;
+	width:40%;
+}
 
 /*main site formatting*/
 
@@ -36,7 +39,7 @@ header {
 	display: inline;
 	
 	
-	background-color: #FF580C;
+	
 	width: 100%;
 }
 
@@ -49,7 +52,7 @@ nav {
 	background-color: #FF580C;
 	border-radius: 5px;
 	text-align: center;
-	height: 75px;
+	
 
 }
 
@@ -60,7 +63,7 @@ nav ul li a {
 
 
 article {
-	height:400px;
+	display: inline-block;
 	background-color: #04B29F;	
 	width: 100%;
 }
@@ -70,7 +73,7 @@ article {
 	padding: 10px;	
 	border-radius: 5px;
 	height:380px;
-	width:48%;
+	width:40%;
 	float:left;
 	text-align: center;
 	vertical-align: center;
@@ -87,17 +90,18 @@ article {
 	padding: 10px;		
 	border-radius: 5px;
 	height: 380px;
-	width: 48%;
+	width: 40%;
 	float:right;
 
 }
 
-footer {
-	background-color: #FF580C;
-	
+footer {	
+	padding:5px;	
 }
 
-
+footer > ul {
+	display: inline-block;
+}
 
 a > img {
 	padding: 5px;
