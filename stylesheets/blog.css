@@ -92,9 +92,15 @@
 }
 
 
-
+.span-3 {
+	width:24%;
+}
 .span-6 {
 	width:49%;
+}
+
+.span-9 {
+	width: 74%;
 }
 
 
@@ -171,7 +177,7 @@ body {
 }
 
 footer {
-
+	
 	bottom: 0;
 }
 

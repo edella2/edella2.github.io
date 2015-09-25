@@ -7,6 +7,7 @@
 	<!-- link to css -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
 	
+	
 	<!-- links to google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -14,50 +15,54 @@
 
 </head><!-- appears in browser head -->
 
-<body>
-	<header>
-		<h1>Eric Dell'Aringa</h1>	
-		<nav>
+<body class="">
+	<header class="container mar-n">
+			
+		<nav class="raleway black">
 			<!--links to different pages -->
-			<ul>
-				<li><a href="">Home</a></li><!--links to index -->
-				<li><a href="">Blog</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="">Resume</a></li>
-				<li><a href="">About Me</a></li>
-				<li><a href="">Contact</a></li>
+			<ul class="lis-n fl-r inline fz-xl">
+				<li class="fl-l p-m"><h1 class="raleway mar-n fz-xxl">Eric Dell'Aringa</h1></li>
+			<!--links to index -->
+				<li class="fl-l p-m"><a href="">Blog</a></li>
+				<li class="fl-l p-m"><a href="">Projects</a></li>
+				<li class="fl-l p-m"><a href="">Resume</a></li>
+				<li class="fl-l p-m"><a href="">About Me</a></li>
+				<li class="fl-l p-m"><a href="">Contact</a></li>
 			</ul>
 		</nav>
+		
 	</header>
-	
-	<article>
-		<div class="main-left">
-			<img src="imgs/Eric-Main.jpg" alt="Eric!">
+	<div class="bgc-hero p-xxl"> <!--hero image-->
+			
+	</div>
+
+
+	<main role="main" class="container gutters">
+		<div class="col span-6 p-xsm">
+			<img src="imgs/Eric-Main.jpg" srcset="imgs/Eric-Main.jpg 4x" alt="Eric!" class="et--portrait">
 		</div> <!--main photo left side -->
 
-		<div class="main-right">
+		<div class="col span-6 roboto p-xsm">
 			<h3>Short Bio</h3><!--bio title -->
 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam reprehenderit, eos, recusandae reiciendis deleniti natus! Obcaecati sint consequuntur totam tempora, expedita dolores in nobis magnam ducimus corporis hic, rem slaudantium! </p><!--bio text -->
 		</div> <!--bio text position right -->
-	</article>
+	</main>
 
-	<footer>
-		
-			 
+	<footer class="container bgc-black"> 
 		
 
-			<ul> <!--social media -->
-				<li>
-					<h5>Email:<a href="edella2@gmail.com"> edella2@gmail.com</a></h5>  
+			<ul class="lis-n fl-r"> <!--social media -->
+				<li class="fl-l p-m white" >
+					<h5 class="fz-sm">Email:<a class="white" href="edella2@gmail.com"> edella2@gmail.com</a></h5>  
 				</li>
-				<li>
-					<a href="http://twitter.com/edella2"><img src="imgs/Twitter-Logo.png" alt="Twitter" /></a>
+				<li class="fl-l p-m" >
+					<a href="http://twitter.com/edella2"><img class="soc--logo" src="imgs/Twitter-Logo.png" alt="Twitter" /></a>
 				</li>
-				<li>
-					<a href="http://facebook.com/eric.dellaringa"><img src="imgs/FB-Logo.png" alt="Facebook" /></a>
+				<li class="fl-l p-m" >
+					<a href="http://facebook.com/eric.dellaringa"><img class="soc--logo" src="imgs/FB-Logo.png" alt="Facebook" /></a>
 				</li>
-				<li>
-					<a href="https://github.com/edella2"><img src="imgs/GitHub-Logo.png" alt="GitHub" /></a>
+				<li class="fl-l p-m" >
+					<a href="https://github.com/edella2"><img class="soc--logo" src="imgs/GitHub-Logo.png" alt="GitHub" /></a>
 				</li>
 			</ul>
 		
