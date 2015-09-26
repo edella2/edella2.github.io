@@ -1,6 +1,7 @@
 #Your Website, part 3 
 
 [index.html](http://edella2.github.io/index.html)
+
 [blog/index.html](http://edella2.github.io/blog/index.html)
 
 
