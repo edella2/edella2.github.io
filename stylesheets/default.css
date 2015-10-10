@@ -44,6 +44,9 @@
 	color:white;
 }
 
+.blue {
+	color:blue;
+}
 
 
 
@@ -216,7 +219,11 @@ footer {
 	position: static;
 }
 
+code {
+	background-color: black;
+	color: red;
 
+}
 
 
 
