@@ -4,8 +4,8 @@
   <title>Eric Dell'Aringa</title>
   <!-- link to css -->
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  
-  
+
+
   <!-- links to google fonts -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -15,24 +15,24 @@
 
 <body class="mar-n">
   <header class="container mar-n">
-      
+
     <nav class="raleway black">
       <!--links to different pages -->
       <ul class="lis-n fl-r inline fz-xl">
         <li class="fl-l p-m"><a href="../index.html"><h1 class="raleway mar-n fz-xxl">Eric Dell'Aringa</h1></a></li>
       <!--links to index -->
         <li class="fl-l p-m"><a href="index.html">Blog</a></li>
-        <li class="fl-l p-m"><a href="">Projects</a></li>
+        <li class="fl-l p-m"><a href="../projects/index.html">Projects</a></li>
         <li class="fl-l p-m"><a href="">Resume</a></li>
         <li class="fl-l p-m"><a href="../about.html">About Me</a></li>
         <li class="fl-l p-m"><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
-    
+
   </header>
 
     <div class="bgc-hero p-xxl clear"> <!--hero image-->
-      
+
   </div>
   <main role="main" class="container mar-sm clear bgc-white p-sm">
 
@@ -45,30 +45,30 @@
       <p>This week we had a challenge that involved adding commas to to numbers.  We wanted integers like 1000 to return 1,000.  This was a tricky challenge that I spent a lot of time on this week working to refactor to be as clean as possible. </p>
 
       <p> My solution for it used an enumerable #each_slice(n): </p>
-         
+
         <code class="container"> def separate_comma(num) </code>
         <code class="container">  new_num = num.to_s.reverse.split("")</code>
         <code class="container">  output = []           </code>
-        <code class="container">  new_num.each_slice(3) do |word| </code> 
+        <code class="container">  new_num.each_slice(3) do |word| </code>
         <code class="container">    output << word.join("")    </code>
         <code class="container">  end </code>
         <code class="container">output.join(",").reverse</code>
         <code class="container">end</code>
-      
+
       <p>The use of <code> #each_slice(3)</code> took an array(new_num) and seperated it into chunks of 3.  I could then combine those digits into a 3 character long string and put it into my output array.  This way if I entered a number like "1234" into the method.  My output array in the <code>#each_slice(3) </code> would be <code> ["123","4"]</code>.  This made it possible for my final output to be joined together again with a comma seperating each character set in the array.</p>
 
       <img class="et--portrait" src="../imgs/ruby_enumerableeach_slice.jpg" alt="#each_slice img">
 
       <p> This image above from <a class ="blue" href="http://www.globalnerdy.com/2008/07/29/enumerating-enumerable-enumerableeach_slice/"> globalnerdy</a> is a good example of what each_slice does.  It takes a large array containing things like the baseball, smiley face, spelling block and teddy bear and sorts them into new arrays in groups of 3.  They have other examples of other enumerable methods on their site and I recommend looking through them for simplified explanations!</p>
-      
+
 
   </main>
 
-  <footer class="bgc-black clear">  
+  <footer class="bgc-black clear">
 
       <ul class="mar-n lis-n fl-r pt-m"> <!--social media -->
         <li class="fl-l pr-m white" >
-          <h5 class="fz-sm">Email:<a class="white" href="edella2@gmail.com"> edella2@gmail.com</a></h5>  
+          <h5 class="fz-sm">Email:<a class="white" href="edella2@gmail.com"> edella2@gmail.com</a></h5>
         </li>
         <li class="fl-l pr-m" >
           <a href="http://twitter.com/edella2"><img class="soc--logo" src="../imgs/Twitter-Logo.png" alt="Twitter" /></a>
@@ -83,7 +83,7 @@
           <a href="https://www.linkedin.com/pub/eric-dell-aringa/37/3a5/65b"><img class="soc--logo" src="../imgs/In-White.png" alt="LinkedIn" /></a>
         </li>
       </ul>
-    
+
   </footer>
 </body>
 
