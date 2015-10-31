@@ -36,52 +36,102 @@
   </div>
   <main role="main" class="container mar-sm clear bgc-white p-sm">
 
-      <h3 class="fz-xxl">Ruby Hashes vs. JavaScript: Objects</h3>
-      <h4 class="fz-l">Round 1 - FIGHT!</h4>
-      <h5>10/25/2015</h5>
+      <h3 class="fz-xxl">Ruby Hashes, Arrays, Strings and Integers</h3>
+      <h4 class="fz-l">Common and Helpful Methods</h4>
+      <h5>Last updated - 10/30/2015</h5>
+
+      <h4>Integers</h4>
+      <h5>#even? // #odd?</h5>
+      <code class="container"> 2.even?  </code>
+      <code class="container"> #=> true </code>
+
+      <h5>#to_i // #floor</h5>
+      <p> Can convert strings with digits as characters to numbers.  Or floats to integers
+      </p>
+      <code class="container"> 2.0.floor </code>
+      <code class="container"> #=> 2 </code>
+      <code class="container"> 2.0.to_i </code>
+      <code class="container"> #=> 2 </code>
+      <code class="container"> "2".to_i  </code>
+      <code class="container"> #=> 2 </code>
 
 
-      <p> Hearing "hashes" when using Ruby used to send shivers up my spine.  I was horrible with them, they were confusing to me and I just never seemed to be able to use them.  I never thought I would have to deal with something I thought was so complicated and confusing again until this week when I met... JavaScript: Objects.  </p>
+      <h5>#to_s</h5>
+      <p> Convert a number to a string</p>
+      <code class="container"> 2.to_s  </code>
+      <code class="container"> #=> "2"</code>
 
-      <span class= "container center"><img class="et--portrait" src="../imgs/round-1-fight.jpeg" alt="round-1-fight! img"></span>
+      <h4>Strings</h4>
 
-      <p> If you read my other blog about arrays vs hashes a few weeks ago, you would see that despite having trouble learning to use hashes I had to concede that they were super useful. </p>
+      <h5>#to_i</h5>
+      <p> Convert a string containing number to an integer</p>
+      <code class="container"> "2".to_s  </code>
+      <code class="container"> #=> "2"</code>
 
-      <p> To define a hash in ruby we would type something like the following: </p>
+      <h5>string &lt;&lt; string</h5>
+      <p> concatenates a string</p>
+      <code class="container"> "hello" &lt;&lt; " world" </code>
+      <code class="container"> #=> "hello world"</code>
 
-      <code class="container"> eric = { </code>
-        <code class="container">  name: "Eric",</code>
-        <code class="container">  age: 28,          </code>
-        <code class="container">  job: "Student" </code>
-        <code class="container">  home: "SF, CA"    </code>
-        <code class="container">  } </code>
+      <h5>#split(pattern, limit)</h5>
+      <p> If a pattern or limit is ommitted the string will be converted into an array containing each charachter of the string.</p>
+      <code class="container"> "hello".split() </code>
+      <code class="container"> #=> ["h","e","l","l","o"]</code>
 
-      <p> To define a object in JavaScript we would have to type: </p>
+      <h5>#strip</h5>
+      <p> removes whitespace from a string</p>
+      <code class="container"> "   spaces   " </code>
+      <code class="container"> #=> "spaces"</code>
 
-      <code class="container"> var eric = { </code>
-        <code class="container">  name: "Eric",</code>
-        <code class="container">  age: 28,          </code>
-        <code class="container">  job: "Student" </code>
-        <code class="container">  home: "SF, CA"    </code>
-        <code class="container">  } </code>
+      <h4>Arrays</h4>
 
-        <p> ... Wait that's pretty much the same thing. The differences between JavaScript and Ruby lie between how the keys and key values are stored.  In ruby the key ( i.e. name, age) can be anything from strings, integers or symbols.  While in JavaScript the keys have to be strings.</p>
+      <h5>arr[idx] // arr.at(idx)</h5>
+      <p> Access the value stored in the array at the index.  Arrays first index is zero</p>
+      <code class="container"> array = [1,"hello", true] </code>
+      <code class="container"> array[1] </code>
+      <code class="container"> #=> "hello"</code>
 
-        <p> But don't rule JavaScript out yet for only storing key values as strings.  It has a few other cool things you might not know about. Objects and their key values can be accessed using dot notation.  If I wanted to access my age in JavaScript I could type:</p>
+      <h5>arr[idx] // arr.at(idx)</h5>
+      <p> Access the value stored in the array at the index.  Arrays first index is zero</p>
+      <code class="container"> array = [1,"hello", true] </code>
+      <code class="container"> array[1] </code>
+      <code class="container"> #=> "hello"</code>
 
-        <code class="container">  eric.name </code>
+      <h5>#insert(n, thing/things to insert)</h5>
+      <p> inserts things into an array at the index specified</p>
+      <code class="container"> array = [1,"hello", true] </code>
+      <code class="container"> array.insert(1, "inserted!") </code>
+      <code class="container"> array #=> [1,"inserted!", "hello", true] </code>
 
-        <p> or </p>
+      <h5>#pop</h5>
+      <p> Remove the last item in the array and return it.</p>
+      <code class="container"> array = [1,"hello", true, "popped"] </code>
+      <code class="container"> array.pop #=> "popped" </code>
+      <code class="container"> array #=> [1,"hello", true]</code>
 
-        <code class="container">  eric["name"] </code>
+      <h5>#delete(element)</h5>
+      <p> Remove the element specified in the array.</p>
+      <code class="container"> array = [1, 1, 1, "hello", true] </code>
+      <code class="container"> array.delete(1) </code>
+      <code class="container"> array #=> ["hello", true]</code>
 
-        <p>Having multiple ways to access information stored in an object is a great thing for flexibility (and readability!) </p>
+      <h4>Hash</h4>
 
-        <p> Other differences between the two exist with how we can interact with the information stored in a hash or object. </p>
+      <h5>Implementing a hash</h5>
+      <p> different ways to implement a hash</p>
+      <code class="container"> hash = { :rocket => "zoom", :name => "Eric" }</code>
+      <code class="container"> hash = { symbol: "not a rocket", name: "Eric" } </code>
 
-        <p> Ruby has several built in class methods and enumerables, such as <code>hash_name.each</code> that interact with hashes that makes iterating through a hash a breeze. </p>
 
-        <p> These same enumerables do not exist with JavaScript because Objects also work in a similar fashion as classes in Ruby.  Objects in JavaScript can store methods as well inside the hash!(a further in depth explanation on that subject for round 2) </p>
+      <h5>Accessing a hash by key</h5>
+      <p> You can access hash values by their key.</p>
+      <code class="container"> hash = { symbol: "not a rocket", name: "Eric" }</code>
+      <code class="container"> hash[:name] #=> "Eric"</code>
+
+      <h5>#hash_key?</h5>
+      <p> Returns true or false if hash contains a key</p>
+      <code class="container"> hash = { symbol: "not a rocket", name: "Eric" }</code>
+      <code class="container"> hash.has_key?(:name) #=> True</code>
 
   </main>
 
