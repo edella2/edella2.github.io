@@ -130,6 +130,13 @@
 
 
 /*==============general formatting===========*/
+.block {
+	display: block;
+}
+
+.v-align-center {
+	vertical-align: center;
+}
 
 .center {
 	text-align: center;
@@ -205,7 +212,7 @@ a:hover {
 }
 
 
-body {	
+body {
 	background-color: #F5F5DC;
 }
 
