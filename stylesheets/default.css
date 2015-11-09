@@ -130,12 +130,22 @@
 
 
 /*==============general formatting===========*/
+
 .flex {
 	display: flex;
 }
 
 .align-item-center {
 	align-items: center;
+}
+
+
+.block {
+	display: block;
+}
+
+.v-align-center {
+	vertical-align: center;
 }
 
 
@@ -213,7 +223,7 @@ a:hover {
 }
 
 
-body {	
+body {
 	background-color: #F5F5DC;
 }
 

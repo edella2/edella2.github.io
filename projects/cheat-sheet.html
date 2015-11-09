@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eric Dell'Aringa</title>
+  <!-- link to css -->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+
+
+  <!-- links to google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+
+</head><!-- appears in browser head -->
+
+<body class="mar-n">
+  <header class="container mar-n">
+
+    <nav class="raleway black">
+      <!--links to different pages -->
+      <ul class="lis-n fl-r inline fz-xl">
+        <li class="fl-l p-m"><a href="../index.html"><h1 class="raleway mar-n fz-xxl">Eric Dell'Aringa</h1></a></li>
+      <!--links to index -->
+        <li class="fl-l p-m"><a href="../blog/index.html">Blog</a></li>
+        <li class="fl-l p-m"><a href="index.html">Projects</a></li>
+        <li class="fl-l p-m"><a href="">Resume</a></li>
+        <li class="fl-l p-m"><a href="../about.html">About Me</a></li>
+        <li class="fl-l p-m"><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+    <div class="bgc-hero p-xxl clear"> <!--hero image-->
+
+  </div>
+  <main role="main" class="container mar-sm clear bgc-white p-sm">
+
+      <h3 class="fz-xxl">Ruby Hashes, Arrays, Strings and Integers</h3>
+      <h4 class="fz-l">Common and Helpful Methods</h4>
+      <h5>Last updated - 10/30/2015</h5>
+
+      <h4>Integers</h4>
+      <h5>#even? // #odd?</h5>
+      <code class="container"> 2.even?  </code>
+      <code class="container"> #=> true </code>
+
+      <h5>#to_i // #floor</h5>
+      <p> Can convert strings with digits as characters to numbers.  Or floats to integers
+      </p>
+      <code class="container"> 2.0.floor </code>
+      <code class="container"> #=> 2 </code>
+      <code class="container"> 2.0.to_i </code>
+      <code class="container"> #=> 2 </code>
+      <code class="container"> "2".to_i  </code>
+      <code class="container"> #=> 2 </code>
+
+
+      <h5>#to_s</h5>
+      <p> Convert a number to a string</p>
+      <code class="container"> 2.to_s  </code>
+      <code class="container"> #=> "2"</code>
+
+      <h4>Strings</h4>
+
+      <h5>#to_i</h5>
+      <p> Convert a string containing number to an integer</p>
+      <code class="container"> "2".to_s  </code>
+      <code class="container"> #=> "2"</code>
+
+      <h5>string &lt;&lt; string</h5>
+      <p> concatenates a string</p>
+      <code class="container"> "hello" &lt;&lt; " world" </code>
+      <code class="container"> #=> "hello world"</code>
+
+      <h5>#split(pattern, limit)</h5>
+      <p> If a pattern or limit is ommitted the string will be converted into an array containing each charachter of the string.</p>
+      <code class="container"> "hello".split() </code>
+      <code class="container"> #=> ["h","e","l","l","o"]</code>
+
+      <h5>#strip</h5>
+      <p> removes whitespace from a string</p>
+      <code class="container"> "   spaces   " </code>
+      <code class="container"> #=> "spaces"</code>
+
+      <h4>Arrays</h4>
+
+      <h5>arr[idx] // arr.at(idx)</h5>
+      <p> Access the value stored in the array at the index.  Arrays first index is zero</p>
+      <code class="container"> array = [1,"hello", true] </code>
+      <code class="container"> array[1] </code>
+      <code class="container"> #=> "hello"</code>
+
+      <h5>arr[idx] // arr.at(idx)</h5>
+      <p> Access the value stored in the array at the index.  Arrays first index is zero</p>
+      <code class="container"> array = [1,"hello", true] </code>
+      <code class="container"> array[1] </code>
+      <code class="container"> #=> "hello"</code>
+
+      <h5>#insert(n, thing/things to insert)</h5>
+      <p> inserts things into an array at the index specified</p>
+      <code class="container"> array = [1,"hello", true] </code>
+      <code class="container"> array.insert(1, "inserted!") </code>
+      <code class="container"> array #=> [1,"inserted!", "hello", true] </code>
+
+      <h5>#pop</h5>
+      <p> Remove the last item in the array and return it.</p>
+      <code class="container"> array = [1,"hello", true, "popped"] </code>
+      <code class="container"> array.pop #=> "popped" </code>
+      <code class="container"> array #=> [1,"hello", true]</code>
+
+      <h5>#delete(element)</h5>
+      <p> Remove the element specified in the array.</p>
+      <code class="container"> array = [1, 1, 1, "hello", true] </code>
+      <code class="container"> array.delete(1) </code>
+      <code class="container"> array #=> ["hello", true]</code>
+
+      <h4>Hash</h4>
+
+      <h5>Implementing a hash</h5>
+      <p> different ways to implement a hash</p>
+      <code class="container"> hash = { :rocket => "zoom", :name => "Eric" }</code>
+      <code class="container"> hash = { symbol: "not a rocket", name: "Eric" } </code>
+
+
+      <h5>Accessing a hash by key</h5>
+      <p> You can access hash values by their key.</p>
+      <code class="container"> hash = { symbol: "not a rocket", name: "Eric" }</code>
+      <code class="container"> hash[:name] #=> "Eric"</code>
+
+      <h5>#hash_key?</h5>
+      <p> Returns true or false if hash contains a key</p>
+      <code class="container"> hash = { symbol: "not a rocket", name: "Eric" }</code>
+      <code class="container"> hash.has_key?(:name) #=> True</code>
+
+  </main>
+
+  <footer class="bgc-black clear">
+
+      <ul class="mar-n lis-n fl-r pt-m"> <!--social media -->
+        <li class="fl-l pr-m white" >
+          <h5 class="fz-sm">Email:<a class="white" href="edella2@gmail.com"> edella2@gmail.com</a></h5>
+        </li>
+        <li class="fl-l pr-m" >
+          <a href="http://twitter.com/edella2"><img class="soc--logo" src="../imgs/Twitter-Logo.png" alt="Twitter" /></a>
+        </li>
+        <li class="fl-l pr-m" >
+          <a href="http://facebook.com/eric.dellaringa"><img class="soc--logo" src="../imgs/FB-Logo.png" alt="Facebook" /></a>
+        </li>
+        <li class="fl-l pr-m" >
+          <a href="https://github.com/edella2"><img class="soc--logo" src="../imgs/GitHub-Logo.png" alt="GitHub" /></a>
+        </li>
+         <li class="fl-l pr-m" >
+          <a href="https://www.linkedin.com/pub/eric-dell-aringa/37/3a5/65b"><img class="soc--logo" src="../imgs/In-White.png" alt="LinkedIn" /></a>
+        </li>
+      </ul>
+
+  </footer>
+</body>
+
+</html>
