@@ -130,6 +130,16 @@
 
 
 /*==============general formatting===========*/
+
+.flex {
+	display: flex;
+}
+
+.align-item-center {
+	align-items: center;
+}
+
+
 .block {
 	display: block;
 }
@@ -137,6 +147,7 @@
 .v-align-center {
 	vertical-align: center;
 }
+
 
 .center {
 	text-align: center;
